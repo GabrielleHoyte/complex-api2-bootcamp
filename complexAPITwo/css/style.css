@@ -1,0 +1,168 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #191617;
+}
+input{
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #cca72f;
+}
+input:focus, textarea {
+    outline: none !important;
+}
+.button{
+  display: inline;
+  margin-left: 0.5%;
+}
+button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #cca72f;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 25px;
+}
+.button:hover .fa-shield{
+  color: #cca72f;
+  transition: 1.5s;
+  transform: rotateY(-180deg);
+}
+button:hover{ 
+animation: pulse 1s infinite;
+animation-timing-function: linear;   
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.1);}
+100% { transform: scale(1); }
+}
+.yellow{
+  background-color: #cca72f;
+  height: 150px;
+  border: 1px solid #cca72f;
+  border-bottom: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.logo{
+  width: 100px;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.barcode{
+  width: 30%;
+  margin-top: 1%;
+  transform: translate(27%, 0);
+}
+.yellowLogo{
+  margin-bottom: 0;
+  color: white;
+  font-size: 75px;
+  margin-top: 2.3%;
+  width: 50%;
+  margin-left: 36%;
+}
+.thumb{
+  float: left;
+  width: 31%;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+.info{
+  float: left;
+  width: 58%;
+  height: 460px;
+  margin-left: 5%;
+  text-align: left;
+  padding-right: 10%;
+}
+.rotate {
+  height: 450px;
+  background-image: url(../img/shieldLogoTwo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration:4s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+}
+@-webkit-keyframes rotate {
+  from {-webkit-transform:rotateY(0deg);}
+  to {  -webkit-transform:rotateY(360deg);}
+}
+@-moz-keyframes rotate {
+  from {-moz-transform:rotateY(0deg);}
+  to {  -moz-transform:rotateY(360deg);}
+}
+.noRotate{
+  transform: translate(0, -135%);
+}
+.card{
+  background-color: #e3e1e2;
+  border-radius: 15px;
+  padding-bottom: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 1%;
+  padding-top: 1%;
+}
+.gifs{
+  margin-top: 1%;
+}
+.gifs img{
+  height: 250px;
+}
+h5{
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+h6, h4{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.hidden{
+  display: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* @media screen and (max-width: 980px){
+  h3{
+    transform: translate(450%, 675%);
+  }
+  h2{
+    transform: translate(-21%, 1680%) skew(-5deg, 0deg);
+  }
+} */
