@@ -1,22 +1,14 @@
 # 📊 Project: Complex API 2
+ 
+A complex Marvel API that returns the name, ID, a description and some stories that a particular Marvel character is in as well as three gifs
 
-### Goal: Use data returned from one api to make a request to another api and display the data returned
+#### Link to Project: 
 
-### How to submit your code for review:
+![Screen Shot 2022-05-06 at 3 28 40 PM](https://user-images.githubusercontent.com/101993328/167204949-5f4578d9-8ba4-4bd5-8d53-9bbf0db48093.png)
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## How It's Made:
+Tech used: HTML, CSS, JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## API's Used
+https://tenor.com/gifapi/documentation
+https://developer.marvel.com/
